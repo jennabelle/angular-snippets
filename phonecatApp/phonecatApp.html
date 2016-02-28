@@ -1,0 +1,14 @@
+<body ng-app="phonecatApp">
+    <input type="text" ng-model="newPhone">
+    <div ng-controller="PhoneListCtrl">
+  <ul>
+    <li ng-repeat="phone in phones">
+      <span>{{phone.name}}</span>
+      <p>{{phone.snippet}}</p>
+    </li>
+  </ul>
+       <button ng-click="delete()">Delete</button>
+      
+       <button ng-click="add(newPhone)">Add</button>
+</div>
+</body>
