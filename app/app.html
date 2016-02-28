@@ -1,0 +1,9 @@
+<body ng-app="app">
+    <div ng-controller="MainController">
+        <input type="text" ng-model="todo" />
+        <ul>
+            <li ng-repeat="do in todos">{{do}}</li>
+        </ul>
+        <button ng-click="addTodo(todo)">Add To-Do</button>
+    </div>
+</body>
